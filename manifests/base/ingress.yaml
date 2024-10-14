@@ -11,7 +11,7 @@ spec:
       - path: /
         backend:
           service:
-            name: template-for-aa
+            name: my-template-for-aa
             port:
               number: 8080
         pathType: Prefix

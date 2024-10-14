@@ -5,13 +5,13 @@ metadata:
 spec:
   ingressClassName: ingress-internal
   rules:
-  - host: "template-for-aa-82058465.ce-aa.kubepia.net"
+  - host: "template-for-aa-82058465-prod.ce-aa.kubepia.net"
     http:
       paths:
       - path: /
         backend:
           service:
-            name: template-for-aa
+            name: my-template-for-aa
             port:
               number: 8080
         pathType: Prefix

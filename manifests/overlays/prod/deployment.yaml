@@ -1,7 +1,7 @@
 apiVersion : apps/v1
 kind: Deployment
 metadata:
-  name: template-for-aa
+  name: "template-for-aa"
 spec:
   replicas: 1
   template:
@@ -11,10 +11,10 @@ spec:
           command: ["java","-jar","/app.jar"]
           args: ["--spring.config.location=file:/config/application.yml"]
           volumeMounts:
-          - mountPath: /mnt/template-for-aa
+          - mountPath: /mnt/cloud-sample
             name: "template-for-aa-volume"
             readOnly: false
-            subPath: template-for-aa
+            subPath: cloud-sample
           - mountPath: /config
             name: application-properties
             readOnly: true
