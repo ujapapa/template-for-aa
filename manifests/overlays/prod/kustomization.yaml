@@ -13,4 +13,4 @@ kind: Kustomization
 namePrefix: prod-
 images:
 - name: cepgstapacr.azurecr.io/template-for-aa
-  newTag: "202410080110"
+  newTag: "202410140227"
