@@ -16,6 +16,7 @@ public class TodoController {
     @GetMapping("/api/v1/user")
     public Integer getUserId(){
         Integer userId = 82058465;
+        String test = "a";
         return userId;
     }
 }
